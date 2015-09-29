@@ -8,7 +8,7 @@ rng('shuffle');
 %addpath(genpath('C:\Matlab_functions'));
 load('C:\Users\Anna\SkyDrive\Documents\MATLAB\Associator_Hala\Associator23_params1.mat');
 
-%% Modify parameters
+%% Modify parameters  just trying to see something
 
 P.folder = 'C:\Users\Anna\SkyDrive\Documents\MATLAB\Associator_RESULTS\'; % folder to save results
 
