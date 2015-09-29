@@ -5,12 +5,12 @@
 clear
 maxNumCompThreads(1);
 rng('shuffle');
-addpath(genpath('C:\Matlab_functions'));
-load('C:\Matlab_functions\Associator\Associator23_params1.mat');
+%addpath(genpath('C:\Matlab_functions'));
+load('C:\Users\Anna\SkyDrive\Documents\MATLAB\Associator_Hala\Associator23_params1.mat');
 
 %% Modify parameters
 
-P.folder = 'C:\Matlab_functions\RESULTS\Associator model_23\10. compare interventions\12. AT, AR = 25, more epochs\'; % folder to save results
+P.folder = 'C:\Users\Anna\SkyDrive\Documents\MATLAB\Associator_RESULTS\'; % folder to save results
 
 P.Ssize = 57;
 P.wordlength = 3;
@@ -21,7 +21,7 @@ P.Sact = 15;
 
 P.performance_threshold = 101;
 P.trainingtype = 'random';
-t=100;
+t=1000;
 P.nbof_S_epochs = t; % nb of epochs to train model on task S
 P.nbof_P_epochs = t; % nb of epochs to train model on task S
 P.nbof_R_epochs = t; % nb of epochs to train model on task S
