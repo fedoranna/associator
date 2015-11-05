@@ -12,7 +12,6 @@ end
 % Testingvocab
 D.start = [];
 
-D.testingphons=VVphonset2
 D.testingsems=editedVVtrainset2
 
 D.trainingphons = D.testingphons;
