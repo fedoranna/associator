@@ -12,6 +12,7 @@ end
 % Testingvocab
 D.start = [];
 
+D.testingphons=Phonologicalvectors
 D.testingsems=editedVVtrainset2
 
 D.trainingphons = D.testingphons;
