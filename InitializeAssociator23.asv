@@ -11,8 +11,8 @@ end
 
 % Testingvocab
 D.start = [];
-D.testingphons = phonologicalvectors;
-D.testingsems = semanticvectors;
+
+
 
 D.trainingphons = D.testingphons;
 D.trainingsems = D.testingsems;
