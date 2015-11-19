@@ -13,7 +13,7 @@ end
 D.start = [];
 function [D.testingphons] = findtestingphons(Mast_VV_phonset2);
 load(Mast_VV_phonset2);
-D.testingphons = Phonologicalvectors
+D.testingphons = phonologicalvectors;
 function [D.testingsems] = findtestingsems(Mast_VV_trainset2);
 load(Mast_VV_trainset2);
 D.testingsems = editedVVtrainset2
