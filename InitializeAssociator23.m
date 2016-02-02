@@ -11,8 +11,24 @@ end
 
 % Testingvocab
 D.start = [];
-D.testingphons = phonologicalvectors;
-D.testingsems = semanticvectors;
+
+if strcmp(P.phoneticseed, 'noseed')
+    rng shuffle
+    s = rng;
+    P.phoneticseed = s.Seed;
+else
+    rng(P.phoneticseed, 'twister');
+end
+[P, D] = P.phoneticsgenerator(P, D);
+
+if strcmp(P.semanticseed, 'noseed')
+    rng shuffle
+    s = rng;
+    P.semanticseed = s.Seed;
+else
+    rng(P.semanticseed, 'twister');
+end
+[P, D] = P.semanticsgenerator(P, D);
 
 D.trainingphons = D.testingphons;
 D.trainingsems = D.testingsems;
